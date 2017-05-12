@@ -50,7 +50,7 @@ window.onclick = function(event) {
 // }
 // })
 function charityLookup(){
-  var urlCharity = 'http://localhost:3000/charitysidebar';
+  var urlCharity = 'https://sgoldgar.github.io/CharityProject_FrontEnd/charitysidebar';
   var emailCharity = localStorage.getItem("username");
   console.log('email', emailCharity);
   var dataCharity = {
@@ -80,7 +80,7 @@ function charityLookup(){
 // personalize sidebar for donor
 function personalizeProfile(){
 
-    var url = 'http://localhost:3000/donorprofile';
+    var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/donorprofile';
     var email = localStorage.getItem("username");
     console.log('email', email);
     var data = {
