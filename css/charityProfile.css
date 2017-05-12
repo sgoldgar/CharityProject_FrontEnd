@@ -1,0 +1,139 @@
+.inner-content {
+  color: #4F5354;
+}
+
+.icon{
+  max-height: 4vh;
+}
+
+.back .icon {
+  margin-right: 3%;
+}
+
+.back{
+  margin: 5% 0;
+}
+
+a {
+  color: #4F5354;
+}
+
+.profile-info{
+  background-color: #9DD3E0;
+  width: 100%;
+  margin-left: -4%;
+  padding-left: 8%;
+  padding-bottom: 4%;
+  box-shadow: inset 11px 0px 47px -11px rgba(0,0,0,0.5);
+}
+
+.inner-title{
+  margin-left: 35%;
+  font-weight: bolder;
+  color: #4F5354;
+}
+
+.charity-logo, .inset-map{
+  background-color: white;
+  padding: 10%;
+  margin-bottom: 10%;
+  opacity: 1;
+  min-height: 150px;
+}
+
+.hours p, .address p{
+  display: inline-block;
+}
+
+.hours p:nth-child(2n), .address p:nth-child(2n){
+  margin-left: 10%;
+}
+
+.contact-button {
+  border: none;
+  box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.18);
+  font-family: Arial;
+  padding: 0.5em 1.2em;
+  margin-right: 10%;
+}
+
+.contact-button img{
+  background-color: white;
+}
+
+.address {
+  margin-bottom: 5%;
+}
+
+.telephone{
+  margin-left: 5%;
+}
+
+/*rows for about us and donations*/
+.about-info, .donations-needed{
+  margin-left: 6%;
+  width: 80%;
+  margin-bottom: 5%;
+  padding: 2% 5% 2% 5%;
+  box-shadow: 5px 11px 46px -2px rgba(0,0,0,0.49);
+}
+
+/*About us*/
+.charity-image{
+  height: 175px;
+  width: 175px;
+}
+
+.about-info h4{
+  font-size: 140%;
+}
+
+.about-info p{
+  display: inline-block;
+  float: right;
+  width: 60%;
+  padding-left: 4%;
+}
+
+.about-info {
+  padding-bottom: 10%;
+}
+
+/*Donations*/
+
+.donations-needed div{
+  background-color: #00b7d1;
+  padding: 3%;
+  margin-top: -3%;
+  margin-left: -7.5%;
+  margin-bottom: 5%;
+  width: 115%;
+}
+
+.donations-needed div p{
+  display: inline;
+  float: right;
+  margin-top: -5%;
+}
+
+.donations-needed h4 {
+  margin-left: 5%;
+  color: white;
+}
+
+.donations-needed p {
+  margin-right: 5%;
+  color: white;
+}
+
+.donations-needed li {
+  width: 30%;
+  display: inline-block;
+}
+
+.inset-map {
+  border: 2px solid silver;
+  padding: 0px;
+  max-height: 45%;
+  max-width: 85%;
+}

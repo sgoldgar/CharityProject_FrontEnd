@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container header-container">
+        <div class="row header-row">
+<!-- This is where the logo will go and it links back to home page. -->
+          <div class="col-xs-4 col-md-4">
+            <a href="homepage.html"><img class="header-logo" src="assets/Page-1.svg" alt="logo"></a>
+          </div>
+<!-- This is the nav bar.  Needs to be static and jump scroll. -->
+          <div class="col-xs-8 col-md-8">
+            <nav id="#nav-target">
+              <ul class="nav-list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li> <a href="#">Help</a></li>
+                <!-- <li><a href="#">profile</a></li> -->
+                <!-- sign-up button -->
+                <button class="button signUpButton" id="sign-in" type="button">SIGN IN</button>
+                <!-- this is a hidden dropdown for when signed in -->
+                <!-- <li>
+                  <div class="dropdown">
+                    <button class="dropButton" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                      <li><a href="profileEdit.html">Public Profile</a></li>
+                      <li><a href="donationHistory.html">Donations</a></li>
+                      <li><a href="messages.html">Messages</a></li>
+                    </ul>
+                </div>
+                </li> -->
+              </ul>
+            </nav>
+          </div>
+         <!--  hamburger nav
+          <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-target">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </header>
+
+
+    <!-- The main section goes here. -->
+    <main>
+
+      <div class="container main-container">
+        <!-- title of the homepage -->
+        <div class="row ">
+          <div class="col-md-12 col-xs-12">
+            <h1>Welcome to CharityWish</h1>
+            <h3>We are dedicated to matching volunteers and non-profits.
+            <br>Join our community!</h3>
+          </div>
+        </div>
+        <!-- links to signup  -->
+        <div class="row">
+          <!-- blank column -->
+          <div class="col-md-3"></div>
+          <!-- donor signup -->
+          <div class="col-md-3 home-match-button">
+            <!-- donor clickable link/button -->
+            <a href="donorSearch.html">
+              <div>
+                <h4>I am a Donor</h4>
+                <p>What do you care about? We are a source to connect
+                you with local nonprofits. Find a nonprofit that needs your help.</p>
+              </div>
+            </a>
+          </div>
+          <!-- charity signup -->
+          <div class="col-md-3 home-match-button" id="sign-up">
+            <!-- charity clickable link/button -->
+            <a href="#">
+              <div>
+                <h4>I am a Charity</h4>
+                <p>We provide a solution to connecting volunteers to you through mutual
+                interests and needs. Build your volunteer network with CharityWish.</p>
+              </div>
+            </a>
+          </div>
+          <!-- blank column -->
+          <div class="col-md-3"></div>
+        </div>
+
+      </div>
+    </main>
+
+
+
+    <!-- This is the footer. It's the same on every page. -->
+    <footer>
+      <div class="container footer-container">
+        <div class="row">
+<!-- Column one three links in a ul. -->
+          <div class="col-xs-4 col-md-4">
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li> <a href="#">Help</a></li>
+            </ul>
+          </div>
+<!-- Column two has text -->
+          <div class="col-xs-4 col-md-4">
+            <p>CharityWish is dedicated to partnering volunteers and non-profits to enhance the lives of all people in Austin.</p>
+          </div>
+<!-- Column three has links in a ul to social media. -->
+          <div class="col-xs-4 col-md-4">
+            <ul class="social-media">
+              <li><a href="#"><img src="assets/post-twitter-icon.svg" alt="twitter"></a></li>
+              <li><a href="#"><img src="assets/post-facebook-icon.svg" alt="facebook"></a></li>
+              <li> <a href="#"><img src="assets/post-instagram-icon.svg" alt="instagram"></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- sign in lightbox -->
+    <!-- THIS IS A PLACEHOLDER FOR AUTH0 AUTH -->
+      <div class="modal fade popUpModal container" id="logInPopup" role="dialog">
+          <div class="modal-dialog">
+          <div class="row">
+              <div class="modal-header popUpHeader col-xs-8 col-md-6">
+                <h2 class="popUp">Sign In</h2>
+                <img class="close" src="assets/x-for-closing-windows.svg" alt="Close with X">
+              </div>
+          </div>
+            <div class="row">
+              <div class="modal-body popUpForm col-xs-8 col-md-6">
+                <form id="USERlogin">
+                <label>Username (email)</label>
+                <input class="USERusernamesignin" type="text" name="email">
+                <label>Password</label>
+                <input class="USERpasswordsignin" type="password" name="password">
+                <button type="submit" name="logIn">Log In</button>
+                </form>
+              </div>
+              <div class="modal-footer popUpFooter col-xs-8 col-md-6">
+                <a href="#" class="logIn" id="googleLogSocial">
+                  <img src="assets/GooglePlusLogin.svg" alt="Log In With Google">
+                </a>
+                <a href="#" class="logIn" id="facebookLogSocial">
+                  <img src="assets/facebook-login.png" alt="Log In With Facebook">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    <!-- lightbox popup from charity sign up -->
+        <div class="modal fade popUpModal container" id="signUpPopup" role="dialog">
+          <div class="modal-dialog">
+          <div class="row">
+            <div class="modal-header popUpHeader col-xs-8 col-md-6">
+              <h2 class="popUp">Charity Sign Up</h2>
+              <img class="close" src="assets/x-for-closing-windows.svg" alt="Close with X">
+            </div>
+          </div>
+            <div class="row">
+              <div class="modal-body popUpForm col-xs-8 col-md-6">
+                <form id="charitysignup">
+                <label>Profile Manager</label>
+                <input class="profileManager" type="text" name="profileManager">
+                <!-- <label>Name</label>
+                <input class="charityname" type="text" name="name"> -->
+                <label>Organization Name</label>
+                <input class="charityorginizationname" type="text" name="organizationName">
+                <label>Address</label>
+                <input class="charityaddress" type="text" name="address">
+                <label>Email (your new username)</label>
+                <input class="charityemail" type="email" name="email">
+                <label>Password</label>
+                <input class="charitypassword" type="password" name="password">
+                <label>Confirm Password</label>
+                <input class="charityconfirmpassword" type="password" name="confirmPassword">
+                <button type="submit" name="signUp">Sign Up</button>
+                </form>
+                </div>
+            </div>
+          </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- <script src=“//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js” type=“text/javascript”></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/lightboxModal.js"></script>
+    <script src='js/loginsignup.js' type="text/javascript"></script>
+  </body>
+</html>

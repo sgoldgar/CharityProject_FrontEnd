@@ -1,0 +1,82 @@
+body {
+  color: #FFFFFF;
+  font-family: Arial;
+}
+
+main {
+  background-image: url("../assets/Hero-Photo-Cropped.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150%;
+  padding-bottom: 25%;
+}
+
+a {
+  color: inherit;
+}
+
+#sign-in {
+  border: none;
+  box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.18);
+  font-family: Arial;
+  padding: 0.3em 1.2em;
+  margin-left: 5%;
+}
+
+h1{
+  margin-top: 10%;
+}
+
+h1, h3{
+  text-align: left;
+  margin-left: 20%;
+}
+
+.header-logo{
+  margin-top: 7%;
+}
+
+nav ul {
+  margin-top: 0;
+}
+
+
+.home-match-button h4 {
+  font-family: Arial;
+  font-size: 18px;
+}
+
+.home-match-button {
+  background-color: rgba(157, 211, 224, 0.8);
+  font-size: 10px;
+  margin-top: 5%;
+  margin-right: 8%;
+  margin-left: -5%;
+
+}
+
+.home-match-button:hover {
+  background-color: rgba(157, 211, 224, 1);
+}
+
+.home-match-button div {
+  min-height: 20vh;
+}
+
+.home-match-button h4{
+  margin-top: 10%;
+}
+
+.home-match-button p{
+  padding-bottom: 5%;
+}
+
+.home-match-button h4, .home-match-button p{
+  margin-left: 10%;
+  padding-right: 20%;
+  width: 100%;
+}
+
+.home-match-button a{
+  text-decoration: none;
+}

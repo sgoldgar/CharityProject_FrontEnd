@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Donations History</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/donationHistory.css">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container header-container">
+        <div class="row header-row">
+<!-- This is where the logo will go and it links back to home page. -->
+          <div class="col-xs-4 col-md-4">
+            <a href="homepage.html"><img src="assets/Page-1.svg" alt="logo"></a>
+          </div>
+<!-- This is the nav bar.  Needs to be static and jump scroll. -->
+          <div class="col-xs-8 col-md-8">
+            <nav>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li> <a href="#">Help</a></li>
+                <li>
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Profile<span class="caret"></span>
+                  </span></button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="/profileEdit.html">Edit Profile</a>
+                      <a href="homepage.html" class="signOut">Sign Out</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- The main section goes here. -->
+    <main>
+      <div class="container main-container">
+        <div class="row main-row">
+          <!-- left side bar, doesn't change -->
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <!-- main greeting -->
+            <div class="greetings">
+              <!-- name and greeting will be generated from ajax call and add an exclamation point, add id on jquery-->
+              <div class="greeting-container">
+                <h2>Greetings <br><span class="charityProfileName"></span></h2>
+              </div>
+              <div class="greeting-image-container">
+                <img src="assets/Profile-Icon.svg" alt="profile-picture">
+              </div>
+
+
+            </div>
+            <ul class="profile-sidebar">
+              <!-- donations link -->
+              <li>
+                <a href="donationHistory.html">Donations</a>
+                <button class="donation-button button" id="donate">
+                  <span class="plus-sign">+<br>
+                  </span> Add <br>Request
+                </button>
+              </li>
+              <!-- messages link -->
+              <li>
+                <a href="chatpage.html">Messages</a>
+              </li>
+              <!-- notifications link -->
+              <li class="selected-link">
+                <a href="#">Notifications</a>
+              </li>
+              <!-- event calendar -->
+              <li>
+                <a href="events.html">Event Calendar</a>
+              </li>
+            </ul>
+          </div>
+          <!-- main content, changes based on where you navigate -->
+          <div class="col-md-8 col-sm-12 col-xs-12">
+            <h2 class="inner-title">Notifications</h2>
+            <p>New feature coming soon!</p>
+
+          </div>
+        </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/lightboxModal.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- <script src=“//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js” type=“text/javascript”></script> -->
+   <!--  <script src=‘script.js’ type=“text/javascript”></script> -->
+
+  </body>
+</html>

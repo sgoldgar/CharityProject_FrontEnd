@@ -1,0 +1,292 @@
+.header-container {
+  background-color: #FFFFFF;
+}
+
+header {
+  max-width: 100%;
+  background-color: #FFFFFF;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-family:  Arial;
+  font-size: 36px;
+}
+
+h3{
+  color: #FFFFFF;
+}
+
+.selected-link, .profile-sidebar li:hover {
+  background-color: rgba(157, 211, 224,0.6);
+}
+
+.profile-sidebar li:last-child:hover {
+  background-color: #00B7D1;
+}
+
+
+/*nav bar and social media icons in footer*/
+nav ul li, .social-media li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer-links li, .profile-sidebar li, .inner-content li {
+  list-style: none;
+}
+
+
+/*for all the buttons on the pages*/
+.button, .contact-button {
+  background-color: #80B773;
+  color: white;
+  border-radius: 100px;
+  /*border 1px inside (margin? from UX)*/
+  font-size: 14px;
+  font-family: Arial;
+  border: none;
+  padding: 1% 3%;
+  /*line 19px (1.4) also from UX?*/
+}
+
+.contact-button:hover{
+    background-color: #8bc67d;
+}
+
+button#sign-in:hover {
+    background-color: #8bc67d;
+}
+
+/*HEADER*/
+
+.header-container, header{
+  box-shadow: inset 0px -8px 5px -6px rgba(0,0,0,0.18);
+}
+
+.header-logo{
+  margin: 5% 10%;
+}
+
+nav ul{
+  margin-top: 1%;
+  padding: 0;
+}
+
+nav ul li {
+  color: #757575;
+  font-family: Arial;
+  font-size: 14px;
+  margin: 4%;
+}
+
+/*push profile link further right*/
+nav ul li:last-child{
+  margin-left: 15%;
+}
+
+nav ul li a{
+  color: #757575;
+  font-family: Arial;
+  font-size: 14px;
+}
+/*Profile Drop down button for signing out*/
+.dropbtn {
+    /*padding: 16px;
+    font-size: 16px;*/
+    border: none;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #00B7D1;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+  background-color: #00B7D1
+}
+.show {
+  display:block;
+}
+
+
+
+/*FORMS*/
+form {
+  background-color: #FFFFFF;
+  color: #9B9B9B;
+  font-family: Arial;
+  font-size: 12px;
+  border-radius: 5px;
+}
+form h2 {
+  color: #00B7D1;
+  font-family: Arial;
+  font-size: 36px;
+}
+form input {
+  border-radius: 5px;
+}
+
+/*JOIN NOW BAR*/
+.joinBar {
+  background-color: #00B7D1;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: Arial;
+  min-width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  padding-top: 10px;
+}
+
+.join {
+  text-decoration: underline;
+ }
+
+/*TEXT ON SEARCH PAGES*/
+.searchHeadText{
+  margin-top: 50px;
+}
+
+/*PROFILE SIDEBAR*/
+.greetings {
+  font-family: Arial;
+  font-size: 36px;
+  width: 100%;
+  background-color: #9DD3E0;
+  color: #FFFFFF;
+  padding: 15% 0 10% 0;
+  font-weight: lighter;
+}
+
+.greeting-container{
+  width: 50%;
+  display: inline;
+}
+
+.greetings h2, .greetings span{
+  margin-left: 15%;
+  display: inline;
+}
+
+.greetings h2{
+  font-weight: lighter;
+}
+
+.greetings span {
+  font-weight: 800;
+}
+
+.greeting-image-container{
+  max-width: 50%;
+  float: right;
+  padding-right: 15%;
+  margin-top: -20%;
+}
+
+.charityProfileName p{
+  margin-left: 15%;
+  margin-top: -10%;
+}
+
+.profile-sidebar{
+  background-color: #00B7D1;
+  font-family: Arial;
+  height: 100%;
+  padding-bottom: 100%;
+  padding-left: 0;
+}
+
+.profile-sidebar li {
+  font-size: 18px;
+  padding: 10%;
+  font-weight: 200;
+  border-bottom: 3px solid #0ac2db;
+}
+
+.profile-sidebar li a {
+  color: #FFFFFF;
+  font-weight: 200;
+  margin-left: 5%;
+}
+
+.profile-sidebar li:last-child{
+  border-bottom: none;
+}
+
+/*donation button*/
+.profile-sidebar button{
+  border-radius: 50%;
+  width: 6em;
+  height: 6em;
+  border: none;
+  font-weight: lighter;
+  box-shadow: 0px 0px 7px 5px rgba(0,0,0,0.18);
+  margin-left: 30%;
+  text-align: center;
+}
+
+/*messages*/
+.chatBox {
+  border: 3px solid #0ac2db;
+}
+
+.chatList {
+  padding: 0px;
+}
+
+.chatProfileLogo {
+  margin-right: 10px;
+}
+
+.chatList li {
+  font-size: 10px;
+  padding: 10%;
+  font-weight: 200;
+  border: 1px solid #616161;
+  list-style: none;
+}
+
+/*FOOTER*/
+footer{
+  background-color: #616161;
+}
+
+.footer-container {
+  background-color: #616161;
+  color: #FFFFFF;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 10px;
+  padding: 2em 15em;
+}
+
+.footer-links a {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.footer-container p {
+  padding-right: 15%;
+}
+
+.social-media li {
+  margin: 5%;
+}

@@ -1,0 +1,46 @@
+.inner-title{
+  color: #00B7D1;
+  font-size: 36px;
+  margin: 5% 0;
+  font-weight: bold;
+}
+
+tbody {
+  border: 1px solid lightgrey;
+}
+
+
+.historyTable{
+  border: none;
+  box-shadow: 0px 3px 5px #888888;
+  min-width: 90%;
+}
+
+.headerTable th{
+  color: darkgrey;
+  font-size: 20px;
+  text-align: center;
+  padding: 3%;
+}
+
+.rowTable{
+border: none;
+border-top: 1px solid lightgrey;
+text-align: center;
+}
+
+td{
+  padding: 20px 50px 20px 20px;
+}
+
+.rowTable:hover{
+  background-color: #9DD3E0;
+}
+
+span .caret{
+  margin-left: 10px !important;
+}
+
+.dropButton {
+  display: inline !important;
+}

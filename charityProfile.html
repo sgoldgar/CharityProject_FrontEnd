@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Charity Name</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/charityProfile.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/donationHistory.css">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container header-container">
+        <div class="row header-row">
+<!-- This is where the logo will go and it links back to home page. -->
+          <div class="col-xs-4 col-md-4">
+            <a href="homepage.html"><img class="header-logo" src="assets/Page-1.svg" alt="logo"></a>
+          </div>
+<!-- This is the nav bar.  Needs to be static and jump scroll. -->
+          <div class="col-xs-8 col-md-8">
+            <nav>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li> <a href="#">Help</a></li>
+                <li>
+                    <div class="dropdown">
+
+                      <button onclick="myFunction()" class="dropbtn">Profile
+                      <span class="caret"></span></button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="profileEdit.html">Edit Profile</a>
+
+                        <a href="homepage.html" class="signOut">Sign Out</a>
+                      </div>
+                    </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+    <!-- The main section goes here. -->
+    <main>
+      <div class="container main-container">
+        <div class="row main-row">
+          <!-- left side bar, doesn't change -->
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <!-- main greeting -->
+            <div class="greetings">
+              <!-- name and greeting will be generated from ajax call and add an exclamation point, add id on jquery-->
+              <div class="greeting-container">
+                <h2>Greetings <br><span class="donorName"></span></h2>
+              </div>
+              <div class="greeting-image-container">
+                <img src="assets/Profile-Icon.svg" alt="profile-picture">
+              </div>
+
+
+            </div>
+            <ul class="profile-sidebar">
+
+              <!-- donor search -->
+              <li class="selected-link">
+                <a href="donorProfile.html">Search</a>
+              </li>
+              <!-- donations link -->
+              <li>
+                <a href="donationHistory.html">Donations</a>
+
+              </li>
+              <!-- messages link -->
+              <li>
+                <a href="chatpage.html">Messages</a>
+              </li>
+              <!-- notifications link -->
+              <li>
+                <a href="notifications.html">Notifications</a>
+              </li>
+              <!-- event calendar -->
+              <li>
+                <a href="events.html">Event Calendar</a>
+              </li>
+
+              <!-- donation request button -->
+              <li>
+                <!-- <button class="donation-button button">
+                  <span class="plus-sign">+</span><br> Donation<br> Request
+                </button> -->
+              </li>
+
+            </ul>
+          </div>
+          <!-- main content, changes based on where you navigate -->
+          <div class="col-md-8 col-sm-12 col-xs-12">
+
+            <section class="inner-content">
+
+              <!-- Charity information -->
+              <div class="row profile-info">
+
+                <!-- Back arrow navigation -->
+                <p class="back"><img class="icon" src="assets/back arrow-18.png" alt="back arrow">Back to Search</p>
+                <!-- Charity name -->
+                <h3 class="inner-title">Open Door at University UUMC</h3>
+
+                <!-- charity logo -->
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <img class="charity-logo" src="assets/UUMC-Square-Logo.svg" alt="UUMC logo">
+                </div>
+                <!-- charity contact information -->
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <div class="hours">
+                      <p>Hours:</p>
+                      <p>M-F, 6:00am -6:00pm <br>
+                      Sa, 10:00am-6:00pm</p>
+                    </div>
+                    <div class="address">
+                      <p>Address:</p>
+                      <p>2409 Guadalupe St., <br>
+                      Austin, TX 78705</p>
+                    </div>
+                    <img class="icon" src="assets/phone icon-19.png" alt="phone icon"><a class="telephone" href="tel:512-476-9387">(512) 478-9387</a>
+                  </div>
+                <!-- charity map  -->
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <!-- link to google maps ajax call -->
+                    <img class="inset-map" src="assets/UUMCmap.png" alt="google map">
+                    <button class="contact-button" id="contactUs">
+                      <img class="icon email-icon" src="assets/Mail Icon-14.png" alt="email icon"> Contact Us
+                    </button>
+                  </div>
+              </div>
+
+              <!-- Charity about section -->
+              <div class="row about-info">
+                <h4>About Us</h4>
+                <div>
+                  <img class="charity-image" src="assets/About us content photo.png" alt="picture of UUMC">
+                  <p>At University UMC, we feed 200+ meals weekly to those in need, as well provide used clothing as toiletries. This ministry is possible because of volunteer help</p>
+                </div>
+              </div>
+
+              <!-- Charity donations needed section/generated in ajax call?-->
+              <div class="row donations-needed">
+                <div>
+                  <h4>Winter weather provisions needed</h4>
+                  <!-- date generated in jquery? -->
+                  <p class="date">04/06/2017</p>
+                </div>
+                <!--list generated from ajax call? -->
+                <ul>
+                  <li>Non-perishable food</li>
+                  <li>Blankets</li>
+                  <li>Volunteers</li>
+                  <li>Dried foods</li>
+                  <li>Peanut Butter</li>
+                </ul>
+              </div>
+
+              <!-- Charity donations needed section -->
+              <div class="row donations-needed">
+                <div>
+                  <h4>Ongoing lunch donations</h4>
+                  <!-- date generated in jquery? -->
+                  <p class="date">Recurring</p>
+                </div>
+                <ul>
+                  <li>Tomato juice</li>
+                  <li>Bread</li>
+                  <li>Canned tuna</li>
+                  <li>Dairy products</li>
+                  <li>Granola bars</li>
+                </ul>
+              </div>
+
+            </section>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+
+
+    <!-- This is the footer. It's the same on every page. -->
+    <footer>
+      <div class="container footer-container">
+        <div class="row">
+<!-- Column one three links in a ul. -->
+          <div class="col-xs-4 col-md-4">
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li> <a href="#">Help</a></li>
+            </ul>
+          </div>
+<!-- Column two has text -->
+          <div class="col-xs-4 col-md-4">
+            <p>CharityWish is dedicated to partnering volunteers and non-profits to enhance the lives of all people in Austin.</p>
+          </div>
+<!-- Column three has links in a ul to social media. -->
+          <div class="col-xs-4 col-md-4">
+            <ul class="social-media">
+              <li><a href="#"><img src="assets/post-twitter-icon.svg" alt="twitter"></a></li>
+              <li><a href="#"><img src="assets/post-facebook-icon.svg" alt="facebook"></a></li>
+              <li> <a href="#"><img src="assets/post-instagram-icon.svg" alt="instagram"></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+      <!-- contact us modal -->
+     <div class="modal fade popUpModal container" id="contactPopup" role="dialog">
+        <div class="modal-dialog">
+          <div class="row">
+              <div class="modal-header popUpHeader col-xs-8 col-md-6">
+                <img class="close" src="assets/x-for-closing-windows.svg" alt="Close with X">
+                <h2 class="popUp">Contact Us</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="modal-body popUpForm col-xs-8 col-md-6">
+                <form>
+                <label>Username (email)</label>
+                <input type="text" name="email">
+                <label>What can we do for you?</label>
+                <textarea name="contactText" rows="15" cols="50"></textarea>
+                <button class="contact" type="submit" name="contact-us">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- SCRIPTS -->
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/lightboxModal.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+        <!--  <script type="text/javascript" src="js/charityProfile.js"></script> -->
+  </body>
+</html>

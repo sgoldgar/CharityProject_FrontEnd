@@ -1,0 +1,28 @@
+.group-btns {
+  margin-left: 10%;
+  margin-top: 5%;
+  box-shadow: 2px 2px 4px 2px grey;
+}
+
+.inner-title{
+  font-weight: bolder;
+  color: #00b7d1;
+}
+
+.result-container{
+  margin: 8% 5%;
+  width: 100%;
+}
+
+.result-container .email-icon {
+  margin-right: 5%;
+  max-height: 20px;
+}
+
+.result-container .needs-text {
+  margin-top: -35%;
+}
+
+.result-container .address p:nth-child(2n) {
+  margin-left: 0;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Messages</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container header-container">
+        <div class="row header-row">
+<!-- This is where the logo will go and it links back to home page. -->
+          <div class="col-xs-4 col-md-4">
+            <a href="homepage.html"><img class="header-logo" src="assets/Page-1.svg" alt="logo"></a>
+          </div>
+<!-- This is the nav bar.  Needs to be static and jump scroll. -->
+          <div class="col-xs-8 col-md-8">
+            <nav>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li> <a href="#">Help</a></li>
+                <li><a href="#">Profile</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- The main section goes here. -->
+    <main>
+      <div class="container main-container">
+        <div class="row main-row">
+          <!-- left side bar, doesn't change -->
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <!-- main greeting -->
+            <div class="greetings">
+              <!-- name and greeting will be generated from ajax call and add an exclamation point, add id on jquery-->
+              <div class="greeting-container">
+                <h2>Greetings <br><span>NAME!</span></h2>
+              </div>
+              <div class="greeting-image-container">
+                <img src="assets/Profile-Icon.svg" alt="profile-picture">
+              </div>
+
+
+            </div>
+            <ul class="profile-sidebar">
+              <!-- donor search -->
+              <li>
+                <a href="donorProfile.html">Search</a>
+              </li>
+              <!-- donations link -->
+              <li>
+                <a href="donationHistory.html">Donations</a>
+              </li>
+              <!-- messages link -->
+              <li class="selected-link">
+                <a href="#">Messages</a>
+              </li>
+              <!-- notifications link -->
+              <li>
+                <a href="#">Notifications</a>
+              </li>
+              <!-- event calendar -->
+              <li>
+                <a href="#">Event Calendar</a>
+              </li>
+              <!-- donation request button -->
+              <li>
+                <button class="donation-button button">
+                  <span class="plus-sign">+</span><br> Donation<br> Request
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- main content, changes based on where you navigate -->
+          <div class="col-md-8 col-sm-12 col-xs-12">
+            <h2 class="inner-title">Messages</h2>
+
+            <section class="inner-content">
+              <table class="historyTable">
+                <tr class="headerTable">
+                  <th>Inbox</th>
+                  <th>Conversation</th>
+
+                </tr>
+                <tr class="rowTable">
+                  <!-- <td><img src="assets/Profile person Icon 2-17.png" alt="profile-picture">UUMC</td> -->
+                  <td></td>
+
+                </tr>
+                 <tr class="rowTable">
+                  <td>old chat</td>
+                  <td></td>
+
+
+                </tr>
+                 <tr class="rowTable">
+                  <td>old chat</td>
+                  <td></td>
+
+                </tr>
+                 <tr class="rowTable">
+                  <td></td>
+
+                </tr>
+                 <tr class="rowTable">
+                  <td><div class="messagebox"></div></td>
+                  <td><input class="messageenter" type="text" placeholder="Write Message...."/></td>
+
+                </tr>
+
+              </table>
+
+            </section>
+
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+
+
+    <!-- This is the footer. It's the same on every page. -->
+    <footer>
+      <div class="container footer-container">
+        <div class="row">
+<!-- Column one three links in a ul. -->
+          <div class="col-xs-4 col-md-4">
+            <ul class="footer-links">
+              <li><a href="#">about us</a></li>
+              <li><a href="#">contact us</a></li>
+              <li> <a href="#">help</a></li>
+            </ul>
+          </div>
+<!-- Column two has text -->
+          <div class="col-xs-4 col-md-4">
+            <p>CharityWish is dedicated to partnering volunteers and non-profits to enhance the lives of all people in Austin.</p>
+          </div>
+<!-- Column three has links in a ul to social media. -->
+          <div class="col-xs-4 col-md-4">
+            <ul class="social-media">
+              <li><a href="#"><img src="assets/post-twitter-icon.svg" alt="twitter"></a></li>
+              <li><a href="#"><img src="assets/post-facebook-icon.svg" alt="facebook"></a></li>
+              <li> <a href="#"><img src="assets/post-instagram-icon.svg" alt="instagram"></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src=“//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js” type=“text/javascript”></script>
+    <script src=‘script.js’ type=“text/javascript”></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <script src='js/messagescript.js' type="text/javascript"></script>
+  </body>
+</html>
