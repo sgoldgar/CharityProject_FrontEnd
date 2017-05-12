@@ -22,8 +22,8 @@ $(function(){
 			if (response.goto==="passwordsdontmatch"){
 				alert("password or username is not correct");
 			}else{
-				console.log("http://localhost:5000/"+response.goto+".html");
-				var locationgo = "http://localhost:5000/"+response.goto+".html"
+				console.log("https://secret-peak-23167.herokuapp.com/"+response.goto+".html");
+				var locationgo = "https://secret-peak-23167.herokuapp.com/"+response.goto+".html"
 				window.location.href = locationgo;
 			}
 		});
