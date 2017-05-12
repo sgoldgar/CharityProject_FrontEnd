@@ -4,7 +4,7 @@ $(function(){
 
 	function logincheck(username, password){
 		
-		var url = 'http://localhost:3000/login/';
+		var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/login/';
 
 		var data = {
 				username: username,
@@ -31,7 +31,7 @@ $(function(){
 	}
 
 	function signup(username, password, type){
-		var url = 'http://localhost:3000/login/signup';
+		var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/login/signup';
 
 		var data = {
 				username: username,
