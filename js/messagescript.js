@@ -4,7 +4,7 @@ $(function(){
 
 
     function sendmsg(usr, msg){
-        var url = 'http://localhost:3000/chat';
+        var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/chat';
 
         var data = {
             usr:usr,
