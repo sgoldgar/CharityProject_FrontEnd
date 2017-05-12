@@ -3,7 +3,7 @@ $(function(){
 	console.log("sanity check");
 
     function logincheck(username, password){
-		var url = 'http://localhost:3000/login/';
+		var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/login/';
 
 		console.log('username', username);
 		console.log('password', password);
@@ -43,7 +43,7 @@ $(function(){
 
 	function pushdonatorinfo(){
 		console.log('got to pushdonatorinfo');
-		var url = 'http://localhost:3000/login/signup/donatorpost';
+		var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/login/signup/donatorpost';
 
 		var name = $('.donorname').val();
 		var username = $('.donoremail').val();
@@ -73,7 +73,7 @@ $(function(){
 
 
     function pushcharityinfo(){
-    	var url = 'http://localhost:3000/login/signup/charitypost';
+    	var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/login/signup/charitypost';
 
     	var profileManager = $(".profileManager").val();
     	var streetAddress = $(".charityaddress").val();
@@ -106,7 +106,7 @@ $(function(){
 
 
 	function signup(username, password, type){
-		var url = 'http://localhost:3000/login/signup';
+		var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/login/signup';
 
 		var data = {
 				username: username,
