@@ -83,7 +83,7 @@ $(".submitSearch").on('click', function(){
  //ajax call to match needs to database
 
 function findNeeds(needs){
- var url = 'http://localhost:3000/charityportal/needs';
+ var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/charityportal/needs';
  console.log('inside findneeds');
    data = {
      needs
