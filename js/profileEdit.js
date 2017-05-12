@@ -91,7 +91,7 @@ $(function(){
 
 
 function pushcharityinfo(){
-  var url = 'http://localhost:3000/charityprofile/push';
+  var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/charityprofile/push';
 
   var organizationName = $("#orgName").val();
   var streetAddress    = $("#orgAddress").val();
@@ -137,7 +137,7 @@ function pushcharityinfo(){
 
 function pullcharityinfo(){
 
-    var url = 'http://localhost:3000/charityprofile/load';
+    var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/charityprofile/load';
 
     var email = localStorage.getItem("username");
     console.log("emailsend ", email);
