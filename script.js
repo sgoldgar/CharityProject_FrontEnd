@@ -4,7 +4,7 @@ $(function(){
 
 	function logincheck(username, password){
 		
-		var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/login/';
+		var url = 'https://secret-peak-23167.herokuapp.com/';
 
 		var data = {
 				username: username,
@@ -31,7 +31,7 @@ $(function(){
 	}
 
 	function signup(username, password, type){
-		var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/login/signup';
+		var url = 'https://secret-peak-23167.herokuapp.com/';
 
 		var data = {
 				username: username,
