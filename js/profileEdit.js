@@ -91,7 +91,7 @@ $(function(){
 
 
 function pushcharityinfo(){
-  var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/charityprofile/push';
+  var url = 'https://secret-peak-23167.herokuapp.com/';
 
   var organizationName = $("#orgName").val();
   var streetAddress    = $("#orgAddress").val();
@@ -137,7 +137,7 @@ function pushcharityinfo(){
 
 function pullcharityinfo(){
 
-    var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/charityprofile/load';
+    var url = 'https://secret-peak-23167.herokuapp.com/';
 
     var email = localStorage.getItem("username");
     console.log("emailsend ", email);
