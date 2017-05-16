@@ -50,7 +50,7 @@ window.onclick = function(event) {
 // }
 // })
 function charityLookup(){
-  var urlCharity = 'https://sgoldgar.github.io/CharityProject_FrontEnd/charitysidebar';
+  var urlCharity = 'https://secret-peak-23167.herokuapp.com/';
   var emailCharity = localStorage.getItem("username");
   console.log('email', emailCharity);
   var dataCharity = {
@@ -80,7 +80,7 @@ function charityLookup(){
 // personalize sidebar for donor
 function personalizeProfile(){
 
-    var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/donorprofile';
+    var url = 'https://secret-peak-23167.herokuapp.com/';
     var email = localStorage.getItem("username");
     console.log('email', email);
     var data = {
