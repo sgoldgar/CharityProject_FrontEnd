@@ -4,7 +4,7 @@ $(function(){
 
 
     function sendmsg(usr, msg){
-        var url = 'https://sgoldgar.github.io/CharityProject_FrontEnd/chat';
+        var url = 'https://secret-peak-23167.herokuapp.com/';
 
         var data = {
             usr:usr,
@@ -27,7 +27,7 @@ $(function(){
 
         console.log("in socketfunk");
 
-        var socket = io('http://localhost:8080');
+        var socket = io('https://secret-peak-23167.herokuapp.com/');
         socket.on('posts', function (data) {
             console.log("socketreturndata: ", data);
             //$('body').append('<p> usr: '+data.usr+' msg: '+data.msg+'</p>')
